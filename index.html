@@ -10,341 +10,499 @@
 </head>
 <body>
 
-  <div class="page-wrapper">
+  <!-- ======================= ШАПКА САЙТА (Превью сайта 1) ======================= -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-left">
+        <a href="#top" class="logo-link" aria-label="TELEPHONE На главную">
+          <svg class="logo-icon" viewBox="0 0 28 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="14,2 25,8.5 25,21.5 14,28 3,21.5 3,8.5" stroke="#8A2BE2" stroke-width="1.8" fill="none"/>
+            <polygon points="14,14 25,20.5 25,33.5 14,40 3,33.5 3,20.5" stroke="#8A2BE2" stroke-width="1.8" fill="none"/>
+          </svg>
+          <span class="brand-wordmark">TELEPHONE</span>
+        </a>
 
-    <!-- ==================== СЛАЙД 1: ПРЕВЬЮ САЙТА 1 ==================== -->
-    <section class="section-frame hero-section" id="hero">
-      <div class="section-inner">
+        <nav class="main-nav" aria-label="Основная навигация">
+          <ul>
+            <li><a href="#technology">Технология связи</a></li>
+            <li><a href="#currency">Валюта</a></li>
+            <li><a href="#directions">Направления и цены</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+          </ul>
+        </nav>
+      </div>
 
-        <!-- Шапка сайта -->
-        <header class="site-header">
-          <div class="header-left">
-            <a href="#hero" class="brand-logo">
-              <img src="assets/icons/logo.svg" alt="TELEPHONE Logo" class="brand-logo-img">
-              <span class="brand-name">TELEPHONE</span>
+      <div class="header-actions">
+        <a href="#auth-modal" class="btn-login">Войти</a>
+        <a href="#auth-modal" class="btn-register">Зарегистрироваться</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ======================= СЛАЙД 1: Превью сайта 1 ======================= -->
+    <section class="hero-section" aria-label="Главный экран">
+      <svg class="route-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <polyline class="route-line" points="86.5,20 25,75.5 52.5,100" />
+      </svg>
+      <div class="route-node" style="left: 86.5%; top: 20%;" title="Узел связи: Альфа"></div>
+      <div class="route-node" style="left: 25%; top: 75.5%;" title="Узел связи: Дельта"></div>
+
+      <div class="portal-wrapper">
+        <div class="portal-sphere">
+          <div class="orbital-vertical"></div>
+          <div class="orbital-horizontal"></div>
+          <div class="orbital-axis"></div>
+
+          <div class="portal-content">
+            <a href="#technology" class="portal-badge">
+              <span>Что такое <strong>TELEPHONE</strong>? Подробнее</span>
+              <span>→</span>
             </a>
 
-            <nav class="main-nav">
-              <a href="#tech" class="nav-link">Технология связи</a>
-              <a href="#currency" class="nav-link">Валюта</a>
-              <a href="#directions" class="nav-link">Направления и цены</a>
-              <a href="#reviews" class="nav-link">Отзывы</a>
-            </nav>
-          </div>
+            <h1 class="portal-title">
+              Поток непрерываемой информации<br>
+              Для любых видов жизни
+            </h1>
 
-          <div class="header-actions">
-            <a href="#reviews" class="btn-login">Войти</a>
-            <a href="#reviews" class="btn-register">Зарегистрироваться</a>
-          </div>
-        </header>
-
-        <!-- Сквозная красная линия маршрута (Слайд 1) -->
-        <svg class="route-svg" viewBox="0 0 1440 780" preserveAspectRatio="none" aria-hidden="true">
-          <line x1="1248" y1="215" x2="720" y2="415" class="route-line" />
-          <line x1="720" y1="415" x2="395" y2="570" class="route-line" />
-          <line x1="395" y1="570" x2="640" y2="780" class="route-line" />
-        </svg>
-        <div class="route-node" style="left: 1248px; top: 215px;"></div>
-        <div class="route-node" style="left: 395px; top: 570px;"></div>
-
-        <!-- Центральная сфера -->
-        <div class="hero-center-area">
-          <div class="hero-sphere">
-            <img src="assets/images/hero-sphere.svg" alt="Орбитальная сфера" class="hero-sphere-bg">
-
-            <div class="hero-sphere-content">
-              <a href="#tech" class="hero-badge">
-                <span>Что такое <strong>TELEPHONE?</strong></span>
-                <span class="badge-more">Подробнее &rarr;</span>
-              </a>
-
-              <div class="hero-titles">
-                <h1 class="hero-title">
-                  Поток непрерываемой информации<br>
-                  <span class="hero-title-sub">Для любых видов жизни</span>
-                </h1>
-              </div>
-
-              <p class="hero-description">
-                Отправка данных между любыми звездными объектами от<br>
-                Министерства Межзвездной Связи
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Бегущая строка слева направо -->
-        <div class="systems-marquee">
-          <div class="marquee-track">
-            <div class="marquee-group">
-              <div class="system-item"><span class="system-dot"></span><span>Дельта</span></div>
-              <div class="system-item"><span class="system-dot"></span><span>Солнечная Система</span></div>
-              <div class="system-item"><span class="system-dot"></span><span>Бета</span></div>
-              <div class="system-item"><span class="system-dot"></span><span>Андромеда</span></div>
-              <div class="system-item"><span class="system-dot"></span><span>Альфа</span></div>
-            </div>
-            <div class="marquee-group" aria-hidden="true">
-              <div class="system-item"><span class="system-dot"></span><span>Дельта</span></div>
-              <div class="system-item"><span class="system-dot"></span><span>Солнечная Система</span></div>
-              <div class="system-item"><span class="system-dot"></span><span>Бета</span></div>
-              <div class="system-item"><span class="system-dot"></span><span>Андромеда</span></div>
-              <div class="system-item"><span class="system-dot"></span><span>Альфа</span></div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== СЛАЙД 2: ТЕХНОЛОГИЯ СВЯЗИ 1 ==================== -->
-    <section class="section-frame tech-section" id="tech">
-      <div class="section-inner">
-
-        <!-- Фоновые звезды и звездные системы (Слайд 2) -->
-        <img src="assets/images/cosmos-slide2.svg" alt="" class="cosmos-bg" aria-hidden="true">
-
-        <!-- Сквозная красная линия маршрута (Слайд 2) -->
-        <svg class="route-svg" viewBox="0 0 1440 780" preserveAspectRatio="none" aria-hidden="true">
-          <line x1="780" y1="0" x2="988" y2="205" class="route-line" />
-          <line x1="988" y1="205" x2="795" y2="780" class="route-line" />
-        </svg>
-        <div class="route-node" style="left: 988px; top: 205px;"></div>
-
-        <!-- Контент: Заголовок и 4 карточки с иконками из assets/icons -->
-        <div class="tech-layout">
-          <h2 class="section-heading">Технология связи</h2>
-
-          <div class="tech-grid">
-            <div class="tech-row">
-              <article class="tech-card card-red">
-                <p class="tech-card-text">Получение сообщения</p>
-                <img src="assets/icons/icon-receive.svg" alt="Получение сообщения" class="tech-card-icon">
-              </article>
-
-              <article class="tech-card card-cyan">
-                <p class="tech-card-text">Перевод языка в<br>бинарный код</p>
-                <img src="assets/icons/icon-binary.svg" alt="Перевод в бинарный код" class="tech-card-icon">
-              </article>
-            </div>
-
-            <div class="tech-row">
-              <article class="tech-card card-cyan">
-                <p class="tech-card-text">Отправка сообщения<br>посредством лазера</p>
-                <img src="assets/icons/icon-laser.svg" alt="Отправка лазером" class="tech-card-icon">
-              </article>
-
-              <article class="tech-card card-red">
-                <p class="tech-card-text">Синхронизация со<br>второй точкой</p>
-                <img src="assets/icons/icon-sync.svg" alt="Синхронизация" class="tech-card-icon">
-              </article>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== СЛАЙД 3: УДОБНЫЙ ВИД ОПЛАТЫ 1 ==================== -->
-    <section class="section-frame payment-section" id="currency">
-      <div class="section-inner">
-
-        <!-- Фоновые звезды и системы (Слайд 3) -->
-        <img src="assets/images/cosmos-slide3.svg" alt="" class="cosmos-bg" aria-hidden="true">
-
-        <!-- Сквозная красная линия маршрута (Слайд 3) -->
-        <svg class="route-svg" viewBox="0 0 1440 780" preserveAspectRatio="none" aria-hidden="true">
-          <line x1="795" y1="0" x2="582" y2="662" class="route-line" />
-          <line x1="582" y1="662" x2="685" y2="780" class="route-line" />
-        </svg>
-        <div class="route-node" style="left: 582px; top: 662px;"></div>
-
-        <!-- Текстовый блок слева -->
-        <div class="payment-layout">
-          <h2 class="section-heading">
-            Оплати свой звонок<br>
-            коином <span class="brand-inline">TELEPHONE</span>
-          </h2>
-
-          <div class="payment-copy">
-            <p class="payment-subtitle">Удобная единая валюта</p>
-            <p class="payment-desc">
-              Можно купить в любом обменике по<br>
-              фиксированной выгодной цене.
+            <p class="portal-subtitle">
+              Отправка данных между любыми звездными объектами от<br>
+              Министерства Межзвездной Связи
             </p>
           </div>
         </div>
+      </div>
 
-        <!-- 3D-коин TELEPHONE из assets/images -->
-        <img src="assets/images/coin-telephone.svg" alt="Коин TELEPHONE 20" class="coin-artwork">
-
+      <!-- Бегущая строка слева направо (position: absolute внизу 1 слайда) -->
+      <div class="systems-marquee" aria-label="Подключенные звездные системы">
+        <div class="systems-track">
+          <ul class="systems-bar">
+            <li class="system-item"><span class="system-dot"></span>Дельта</li>
+            <li class="system-item"><span class="system-dot"></span>Солнечная Система</li>
+            <li class="system-item"><span class="system-dot"></span>Бета</li>
+            <li class="system-item"><span class="system-dot"></span>Андромеда</li>
+            <li class="system-item"><span class="system-dot"></span>Альфа</li>
+          </ul>
+          <ul class="systems-bar" aria-hidden="true">
+            <li class="system-item"><span class="system-dot"></span>Дельта</li>
+            <li class="system-item"><span class="system-dot"></span>Солнечная Система</li>
+            <li class="system-item"><span class="system-dot"></span>Бета</li>
+            <li class="system-item"><span class="system-dot"></span>Андромеда</li>
+            <li class="system-item"><span class="system-dot"></span>Альфа</li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <!-- ==================== СЛАЙД 4: НАПРАВЛЕНИЯ И ЦЕНЫ 1 ==================== -->
-    <section class="section-frame directions-section" id="directions">
-      <div class="section-inner">
+    <!-- ======================= СЛАЙД 2: Технология связи 1 ======================= -->
+    <section id="technology" class="section-frame tech-section" aria-labelledby="tech-title">
+      
+      <!-- Фоновые звезды, созвездия и планетарная система (position: absolute) -->
+      <div class="cosmos-bg" aria-hidden="true">
+        <svg class="cosmos-svg" viewBox="0 0 1440 820" preserveAspectRatio="xMidYMid slice" fill="none">
+          <g opacity="0.38">
+            <circle cx="1180" cy="460" r="195" stroke="#ffffff" stroke-width="1" stroke-dasharray="6 10" />
+            <circle cx="1180" cy="460" r="130" stroke="#00e5b0" stroke-width="1.2" />
+            <circle cx="1180" cy="460" r="68" stroke="#a855f7" stroke-width="1" />
+            <circle class="star-glow-red" cx="1180" cy="460" r="18" fill="#9e2a1b" stroke="#ffffff" stroke-width="1.5" />
+            <circle class="star-glow-cyan" cx="1050" cy="460" r="7" fill="#00c48c" />
+            <circle class="star-glow-white" cx="1298" cy="305" r="5" fill="#ffffff" />
+            <circle cx="1132" cy="510" r="4" fill="#00e5b0" />
+          </g>
 
-        <!-- Фоновые звезды и рукава галактики (Слайд 4) -->
-        <img src="assets/images/cosmos-slide4.svg" alt="" class="cosmos-bg" aria-hidden="true">
+          <g opacity="0.3">
+            <circle cx="1270" cy="130" r="52" stroke="#ffffff" stroke-width="1" />
+            <circle cx="1270" cy="130" r="26" stroke="#00c48c" stroke-width="1" stroke-dasharray="3 5" />
+            <circle class="star-glow-white" cx="1270" cy="130" r="6" fill="#ffffff" />
+            <circle cx="1218" cy="130" r="3.5" fill="#00e5b0" />
+          </g>
 
-        <!-- Сквозная красная линия маршрута (Слайд 4) -->
-        <svg class="route-svg" viewBox="0 0 1440 780" preserveAspectRatio="none" aria-hidden="true">
-          <line x1="765" y1="0" x2="1095" y2="465" class="route-line" />
-          <line x1="1095" y1="465" x2="290" y2="682" class="route-line" />
-          <line x1="290" y1="682" x2="402" y2="780" class="route-line" />
+          <g stroke="rgba(255,255,255,0.22)" stroke-width="1" stroke-dasharray="4 4">
+            <polyline points="820,110 920,165 1030,120 1090,210" />
+            <polyline points="890,620 980,690 1110,650" />
+          </g>
+          <circle cx="820" cy="110" r="3" fill="#ffffff" opacity="0.7" />
+          <circle class="star-glow-cyan" cx="920" cy="165" r="4" fill="#00e5b0" opacity="0.8" />
+          <circle cx="1030" cy="120" r="3" fill="#ffffff" opacity="0.7" />
+          <circle cx="1090" cy="210" r="3.5" fill="#ffffff" opacity="0.6" />
+          <circle cx="890" cy="620" r="3" fill="#00e5b0" opacity="0.7" />
+          <circle class="star-glow-white" cx="980" cy="690" r="3.5" fill="#ffffff" opacity="0.7" />
+          <circle cx="1110" cy="650" r="3" fill="#ffffff" opacity="0.6" />
+
+          <path class="star-glow-white" d="M1340 590 L1345 606 L1361 611 L1345 616 L1340 632 L1335 616 L1319 611 L1335 606 Z" fill="#ffffff" opacity="0.85" />
+          <path class="star-glow-cyan" d="M760 280 L763 290 L773 293 L763 296 L760 306 L757 296 L747 293 L757 290 Z" fill="#00e5b0" opacity="0.75" />
+          <path class="star-glow-white" d="M1080 70 L1083 78 L1091 81 L1083 84 L1080 92 L1077 84 L1069 81 L1077 78 Z" fill="#ffffff" opacity="0.7" />
+          <path d="M620 85 L622 92 L629 94 L622 96 L620 103 L618 96 L611 94 L618 92 Z" fill="#ffffff" opacity="0.5" />
+          <path class="star-glow-white" d="M840 730 L843 740 L853 743 L843 746 L840 756 L837 746 L827 743 L837 740 Z" fill="#ffffff" opacity="0.65" />
         </svg>
-        <div class="route-node" style="left: 1095px; top: 465px;"></div>
-        <div class="route-node" style="left: 290px; top: 682px;"></div>
+      </div>
 
-        <!-- Контент: Заголовок и 4 квадранта -->
-        <div class="directions-layout">
-          <h2 class="section-heading">
+      <!-- Красная линия маршрута секции 2 -->
+      <svg class="route-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <polyline class="route-line" points="52.5,0 68,28 55,100" />
+      </svg>
+      <div class="route-node" style="left: 68%; top: 28%;" title="Ретранслятор лазерного луча"></div>
+
+      <!-- Flex-контейнер секции 2 -->
+      <div class="section-inner tech-inner">
+        <h2 id="tech-title" class="section-heading">Технология связи</h2>
+
+        <div class="tech-grid">
+          <div class="tech-row">
+            <!-- Карточка 1: Получение сообщения -->
+            <article class="tech-card tech-card--red">
+              <h3 class="tech-card-title">Получение сообщения</h3>
+              <svg class="tech-card-icon" viewBox="0 0 120 86" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M40 16 C52 8, 68 8, 80 16" stroke="#00e5b0" stroke-width="2" stroke-linecap="round" />
+                <path d="M46 24 C54 18, 66 18, 74 24" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+                <rect x="30" y="30" width="60" height="38" rx="6" stroke="#ffffff" stroke-width="2.2" fill="rgba(0,0,0,0.22)" />
+                <circle cx="60" cy="49" r="10" fill="#ffffff" />
+                <polygon points="52,59 68,59 60,75" fill="#00e5b0" opacity="0.85" />
+                <rect x="36" y="74" width="48" height="7" rx="3.5" fill="#ffffff" />
+              </svg>
+            </article>
+
+            <!-- Карточка 2: Перевод языка в бинарный код -->
+            <article class="tech-card tech-card--teal">
+              <h3 class="tech-card-title">Перевод языка в<br>бинарный код</h3>
+              <svg class="tech-card-icon" viewBox="0 0 120 86" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <line x1="14" y1="46" x2="14" y2="62" stroke="#110521" stroke-width="3" stroke-linecap="round" />
+                <line x1="22" y1="34" x2="22" y2="74" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+                <line x1="30" y1="42" x2="30" y2="66" stroke="#110521" stroke-width="3" stroke-linecap="round" />
+                <line x1="38" y1="28" x2="38" y2="78" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+                <line x1="46" y1="44" x2="46" y2="64" stroke="#110521" stroke-width="3" stroke-linecap="round" />
+                <path d="M54 54 H66 M62 49 L67 54 L62 59" stroke="#9e2a1b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+                <rect x="72" y="30" width="42" height="48" rx="6" fill="rgba(17,5,33,0.28)" stroke="#ffffff" stroke-width="1.6" />
+                <text x="93" y="50" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#ffffff" letter-spacing="2">101</text>
+                <text x="93" y="68" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#110521" letter-spacing="2">010</text>
+              </svg>
+            </article>
+          </div>
+
+          <div class="tech-row">
+            <!-- Карточка 3: Отправка сообщения посредством лазера -->
+            <article class="tech-card tech-card--teal">
+              <h3 class="tech-card-title">Отправка сообщения<br>посредством лазера</h3>
+              <svg class="tech-card-icon" viewBox="0 0 120 86" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <line x1="8" y1="26" x2="104" y2="26" stroke="#9e2a1b" stroke-width="3.2" />
+                <line x1="12" y1="30" x2="88" y2="30" stroke="#110521" stroke-width="1.5" stroke-dasharray="2 4" />
+                <circle cx="104" cy="26" r="5" fill="#9e2a1b" />
+                <path d="M104 15 V37 M93 26 H115 M96 18 L112 34 M112 18 L96 34" stroke="#9e2a1b" stroke-width="1.6" />
+                <polygon points="36,54 98,42 74,78 60,64" fill="#110521" stroke="#ffffff" stroke-width="1.6" stroke-linejoin="round" />
+                <line x1="98" y1="42" x2="60" y2="64" stroke="#00e5b0" stroke-width="1.5" />
+              </svg>
+            </article>
+
+            <!-- Карточка 4: Синхронизация со второй точкой -->
+            <article class="tech-card tech-card--red">
+              <h3 class="tech-card-title">Синхронизация со<br>второй точкой</h3>
+              <svg class="tech-card-icon" viewBox="0 0 120 86" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <line x1="26" y1="38" x2="94" y2="38" stroke="#00e5b0" stroke-width="2" />
+                <line x1="32" y1="38" x2="88" y2="38" stroke="#ffffff" stroke-width="6" stroke-dasharray="1.5 6" />
+                <polygon points="26,26 35,31 35,43 26,48 17,43 17,31" stroke="#c084fc" stroke-width="1.6" fill="rgba(17,5,33,0.4)" />
+                <polygon points="94,26 103,31 103,43 94,48 85,43 85,31" stroke="#c084fc" stroke-width="1.6" fill="rgba(17,5,33,0.4)" />
+                <circle cx="26" cy="64" r="11" fill="#ffffff" />
+                <circle cx="94" cy="64" r="11" fill="#ffffff" />
+                <circle cx="26" cy="38" r="2.5" fill="#ffffff" />
+                <circle cx="94" cy="38" r="2.5" fill="#ffffff" />
+              </svg>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= СЛАЙД 3: Удобный вид оплаты 1 ======================= -->
+    <section id="currency" class="section-frame currency-section" aria-labelledby="currency-title">
+      
+      <!-- Фоновые звезды и бинарная звездная система (position: absolute) -->
+      <div class="cosmos-bg" aria-hidden="true">
+        <svg class="cosmos-svg" viewBox="0 0 1440 820" preserveAspectRatio="xMidYMid slice" fill="none">
+          <g opacity="0.34">
+            <circle cx="1110" cy="195" r="105" stroke="#00e5b0" stroke-width="1.5" />
+            <circle cx="1110" cy="195" r="76" stroke="#00e5b0" stroke-width="1" stroke-dasharray="5 8" />
+            <circle class="star-glow-red" cx="1110" cy="195" r="16" fill="#9e2a1b" />
+            <circle class="star-glow-white" cx="1005" cy="195" r="5" fill="#ffffff" />
+            <ellipse cx="950" cy="135" rx="68" ry="32" transform="rotate(-28 950 135)" stroke="#ffffff" stroke-width="1" />
+            <circle class="star-glow-cyan" cx="950" cy="135" r="6" fill="#00c48c" />
+          </g>
+
+          <g opacity="0.26">
+            <circle cx="180" cy="690" r="88" stroke="#ffffff" stroke-width="1" stroke-dasharray="4 8" />
+            <circle cx="180" cy="690" r="46" stroke="#a855f7" stroke-width="1.2" />
+            <circle class="star-glow-cyan" cx="180" cy="690" r="8" fill="#00e5b0" />
+            <circle cx="242" cy="628" r="4" fill="#ffffff" />
+          </g>
+
+          <g opacity="0.28" transform="translate(690, 95) rotate(18)">
+            <polygon points="24,0 48,14 48,42 24,56 0,42 0,14" stroke="#a855f7" stroke-width="1.4" />
+            <polygon points="24,22 48,36 48,64 24,78 0,64 0,36" stroke="#00e5b0" stroke-width="1.4" />
+          </g>
+
+          <polyline points="780,360 855,310 940,340 1010,285" stroke="rgba(255,255,255,0.22)" stroke-width="1" stroke-dasharray="3 5" />
+          <circle cx="780" cy="360" r="3" fill="#ffffff" opacity="0.7" />
+          <circle class="star-glow-cyan" cx="855" cy="310" r="4" fill="#00e5b0" opacity="0.8" />
+          <circle cx="940" cy="340" r="3" fill="#ffffff" opacity="0.7" />
+          <circle class="star-glow-white" cx="1010" cy="285" r="3.5" fill="#ffffff" opacity="0.7" />
+
+          <path class="star-glow-white" d="M1290 95 L1295 111 L1311 116 L1295 121 L1290 137 L1285 121 L1269 116 L1285 111 Z" fill="#ffffff" opacity="0.85" />
+          <path class="star-glow-cyan" d="M640 480 L644 492 L656 496 L644 500 L640 512 L636 500 L624 496 L636 492 Z" fill="#00e5b0" opacity="0.75" />
+          <path class="star-glow-white" d="M480 90 L483 99 L492 102 L483 105 L480 114 L477 105 L468 102 L477 99 Z" fill="#ffffff" opacity="0.7" />
+          <path d="M520 680 L523 689 L532 692 L523 695 L520 704 L517 695 L508 692 L517 689 Z" fill="#ffffff" opacity="0.65" />
+        </svg>
+      </div>
+
+      <!-- Красная линия маршрута секции 3 -->
+      <svg class="route-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <polyline class="route-line" points="55,0 40.3,77.5 51,100" />
+      </svg>
+      <div class="route-node" style="left: 40.3%; top: 77.5%;" title="Шлюз межзвездной оплаты"></div>
+
+      <!-- Flex-контейнер секции 3 -->
+      <div class="section-inner currency-inner">
+        <h2 id="currency-title" class="currency-heading">
+          Оплати свой звонок<br>
+          коином <span class="brand-wordmark">TELEPHONE</span>
+        </h2>
+
+        <div class="currency-text-group">
+          <p class="currency-lead">Удобная единая валюта</p>
+          <p class="currency-desc">
+            Можно купить в любом обменике по фиксированной выгодной цене.
+          </p>
+        </div>
+
+        <!-- Векторная 3D-монета с бинарным кодом 101010 и номиналом 20 (position: absolute) -->
+        <div class="coin-artwork" aria-hidden="true">
+          <svg viewBox="0 0 500 500" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <path id="binaryRingPath" d="M 245, 260 m -172, 0 a 172,172 0 1,1 344,0 a 172,172 0 1,1 -344,0" />
+            </defs>
+
+            <ellipse cx="264" cy="244" rx="205" ry="196" transform="rotate(-22 264 244)" fill="#ffffff" stroke="#1e1e1e" stroke-width="1.5"/>
+            <ellipse cx="245" cy="260" rx="205" ry="196" transform="rotate(-22 245 260)" fill="#ffffff" stroke="#1e1e1e" stroke-width="1.5"/>
+
+            <text font-family="'Oswald', 'JetBrains Mono', monospace" font-size="22" font-weight="700" fill="#181818" letter-spacing="8.3">
+              <textPath href="#binaryRingPath" startOffset="0%">
+                1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+              </textPath>
+            </text>
+
+            <ellipse cx="245" cy="260" rx="152" ry="145" transform="rotate(-22 245 260)" fill="#9e2a1b" stroke="#1e1e1e" stroke-width="1.5"/>
+
+            <circle cx="245" cy="260" r="52" fill="#9e2a1b" stroke="#1e1e1e" stroke-width="1.5"/>
+            <text x="245" y="274" text-anchor="middle" font-family="'Oswald', sans-serif" font-size="42" font-weight="700" fill="#ffffff" letter-spacing="6">20</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= СЛАЙД 4: Направления и цены 1 ======================= -->
+    <section id="directions" class="section-frame directions-section" aria-labelledby="galaxy-title">
+      
+      <!-- Фоновые звездные системы и галактические рукава (position: absolute) -->
+      <div class="cosmos-bg" aria-hidden="true">
+        <svg class="cosmos-svg" viewBox="0 0 1440 820" preserveAspectRatio="xMidYMid slice" fill="none">
+          <g opacity="0.22">
+            <ellipse cx="720" cy="430" rx="620" ry="210" transform="rotate(-8 720 430)" stroke="#ffffff" stroke-width="1" stroke-dasharray="8 14" />
+            <ellipse cx="720" cy="430" rx="460" ry="145" transform="rotate(-8 720 430)" stroke="#00e5b0" stroke-width="1" stroke-dasharray="4 10" />
+          </g>
+
+          <g opacity="0.38">
+            <circle cx="1190" cy="165" r="92" stroke="#ffffff" stroke-width="1" />
+            <circle cx="1190" cy="165" r="54" stroke="#00c48c" stroke-width="1.2" stroke-dasharray="4 6" />
+            <circle class="star-glow-cyan" cx="1190" cy="165" r="14" fill="#00c48c" />
+            <circle class="star-glow-white" cx="1098" cy="165" r="5" fill="#ffffff" />
+            <circle cx="1228" cy="127" r="4" fill="#9e2a1b" />
+          </g>
+
+          <g opacity="0.32">
+            <circle cx="1260" cy="675" r="74" stroke="#ffffff" stroke-width="1" stroke-dasharray="5 7" />
+            <circle cx="1260" cy="675" r="36" stroke="#ffffff" stroke-width="1" />
+            <circle class="star-glow-red" cx="1260" cy="675" r="9" fill="#9e2a1b" stroke="#ffffff" stroke-width="1" />
+            <circle class="star-glow-cyan" cx="1224" cy="675" r="4" fill="#00e5b0" />
+          </g>
+
+          <g stroke="rgba(255,255,255,0.28)" stroke-width="1" stroke-dasharray="3 6">
+            <polyline points="140,610 260,660 390,615 510,670" />
+            <polyline points="620,120 740,85 870,135 960,95" />
+          </g>
+          <circle cx="140" cy="610" r="3" fill="#ffffff" opacity="0.75" />
+          <circle class="star-glow-cyan" cx="260" cy="660" r="4" fill="#00e5b0" opacity="0.85" />
+          <circle cx="390" cy="615" r="3" fill="#ffffff" opacity="0.75" />
+          <circle cx="510" cy="670" r="3.5" fill="#ffffff" opacity="0.75" />
+          <circle cx="620" cy="120" r="3" fill="#ffffff" opacity="0.75" />
+          <circle class="star-glow-cyan" cx="740" cy="85" r="4" fill="#00e5b0" opacity="0.85" />
+          <circle cx="870" cy="135" r="3.5" fill="#ffffff" opacity="0.75" />
+          <circle cx="960" cy="95" r="3" fill="#ffffff" opacity="0.7" />
+
+          <path class="star-glow-white" d="M980 185 L985 201 L1001 206 L985 211 L980 227 L975 211 L959 206 L975 201 Z" fill="#ffffff" opacity="0.85" />
+          <path class="star-glow-cyan" d="M105 490 L109 502 L121 506 L109 510 L105 522 L101 510 L89 506 L101 502 Z" fill="#00e5b0" opacity="0.75" />
+          <path class="star-glow-white" d="M540 180 L543 190 L553 193 L543 196 L540 206 L537 196 L527 193 L537 190 Z" fill="#ffffff" opacity="0.7" />
+          <path class="star-glow-white" d="M940 670 L944 682 L956 686 L944 690 L940 702 L936 690 L924 686 L936 682 Z" fill="#ffffff" opacity="0.75" />
+          <path class="star-glow-cyan" d="M1340 420 L1343 430 L1353 433 L1343 436 L1340 446 L1337 436 L1327 433 L1337 430 Z" fill="#00e5b0" opacity="0.7" />
+        </svg>
+      </div>
+
+      <!-- Красная линия маршрута секции 4 -->
+      <svg class="route-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <polyline class="route-line" points="51,0 73.5,60.5 17.2,84.5 31.5,100" />
+      </svg>
+      <div class="route-node" style="left: 73.5%; top: 60.5%;" title="Квадрант Гамма — Узел"></div>
+      <div class="route-node" style="left: 17.2%; top: 84.5%;" title="Периферийный шлюз"></div>
+
+      <!-- Flex-контейнер секции 4 -->
+      <div class="section-inner directions-inner">
+        <div class="directions-header">
+          <h2 id="galaxy-title" class="section-heading">
             Галактика<br>
             Млечный Путь
           </h2>
-
-          <div class="quadrants-row">
-            <div class="quadrant-item">
-              <div class="quadrant-inner-ring">
-                <div class="quadrant-core"></div>
-                <span class="quadrant-name">Бета</span>
-              </div>
-            </div>
-
-            <div class="quadrant-item">
-              <div class="quadrant-inner-ring">
-                <div class="quadrant-core"></div>
-                <span class="quadrant-name">Дельта</span>
-              </div>
-            </div>
-
-            <div class="quadrant-item">
-              <div class="quadrant-inner-ring">
-                <div class="quadrant-core"></div>
-                <span class="quadrant-name">Альфа</span>
-              </div>
-            </div>
-
-            <div class="quadrant-item">
-              <div class="quadrant-inner-ring">
-                <div class="quadrant-core"></div>
-                <span class="quadrant-name">Гамма</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="quadrants-caption-wrap">
-            <p class="quadrants-caption">Доступные квадранты</p>
-          </div>
         </div>
 
+        <!-- 4 круга квадрантов (Бета, Дельта, Альфа, Гамма) -->
+        <div class="quadrants-row">
+          <article class="quadrant-item">
+            <div class="quadrant-inner-ring">
+              <div class="quadrant-core"></div>
+              <h3 class="quadrant-name">Бета</h3>
+            </div>
+          </article>
+
+          <article class="quadrant-item">
+            <div class="quadrant-inner-ring">
+              <div class="quadrant-core"></div>
+              <h3 class="quadrant-name">Дельта</h3>
+            </div>
+          </article>
+
+          <article class="quadrant-item">
+            <div class="quadrant-inner-ring">
+              <div class="quadrant-core"></div>
+              <h3 class="quadrant-name">Альфа</h3>
+            </div>
+          </article>
+
+          <article class="quadrant-item">
+            <div class="quadrant-inner-ring">
+              <div class="quadrant-core"></div>
+              <h3 class="quadrant-name">Гамма</h3>
+            </div>
+          </article>
+        </div>
+
+        <div class="directions-caption-row">
+          <p class="directions-caption">Доступные квадранты</p>
+        </div>
       </div>
     </section>
 
-    <!-- ==================== СЛАЙД 5: ТЕХНИЧКА 1 (ОТЗЫВЫ И КОНТАКТЫ) ==================== -->
-    <section class="section-frame tech-footer-section" id="reviews">
-      <div class="section-inner">
+    <!-- ======================= СЛАЙД 5: Техничка 1 (Отзывы + Контакты @tkad1 + Подвал) ======================= -->
+    <section id="reviews" class="section-frame tech-footer-section" aria-labelledby="reviews-title">
+      <svg class="route-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <line class="route-line" x1="31.5" y1="0" x2="68" y2="62.5" />
+      </svg>
+      <div class="route-node" style="left: 68%; top: 62.5%;" title="Финальный терминал связи @tkad1"></div>
 
-        <!-- Сквозная красная линия маршрута (Слайд 5) -->
-        <svg class="route-svg" viewBox="0 0 1440 780" preserveAspectRatio="none" aria-hidden="true">
-          <line x1="468" y1="0" x2="1008" y2="528" class="route-line" />
-        </svg>
-        <div class="route-node" style="left: 1008px; top: 528px;"></div>
-
-        <div class="footer-slide-layout">
-
-          <!-- Блок отзывов и статуса -->
-          <div class="reviews-top-area">
-            <div class="reviews-header">
-              <span class="tech-tag">ЖУРНАЛ СЕАНСОВ // ММС-261</span>
-              <h2 class="reviews-title">Отзывы абонентов и статус сети</h2>
-            </div>
-
-            <div class="reviews-grid">
+      <div class="section-inner footer-section-inner">
+        <div class="final-top-row">
+          <div class="reviews-col">
+            <h2 id="reviews-title" class="reviews-block-title">Отзывы абонентов сети</h2>
+            <div class="reviews-list">
               <article class="review-card">
                 <div class="review-meta">
-                  <span>АБОНЕНТ: КОРВУС-7</span>
-                  <span class="status-ok">● КАНАЛ ЧИСТЫЙ</span>
+                  <span>КВАДРАНТ АЛЬФА</span>
+                  <span>PING 0.002s</span>
                 </div>
-                <p class="review-body">
-                  «Отправлял пакет данных из рукава Ориона в сектор Бета. Лазерная маршрутизация сработала мгновенно — бинарный переводчик передал интонацию без единой потери».
+                <p class="review-text">
+                  «Передача голограммы из Солнечной системы в сектор Андромеды прошла без единого разрыва пакета. Лазерный канал держит частоту идеально».
                 </p>
-                <span class="review-tariff">ТАРИФ: БЕТА // 10 TEL</span>
+                <span class="review-author">— Бортинженер ст. «Орбита-9»</span>
               </article>
 
               <article class="review-card">
                 <div class="review-meta">
-                  <span>СТАНЦИЯ «ТИТАН-04»</span>
-                  <span class="status-ok">● ЗАДЕРЖКА 0.002 С</span>
+                  <span>КВАДРАНТ ДЕЛЬТА</span>
+                  <span>20 TEL COIN</span>
                 </div>
-                <p class="review-body">
-                  «Единый коин TELEPHONE избавил экспедицию от комиссий местных обменников. Держим постоянный канал со штабом в Солнечной системе».
+                <p class="review-text">
+                  «Автоматический перевод речи в бинарный код спас переговоры с кремниевой колонией. Оплата коином TELEPHONE заняла секунду».
                 </p>
-                <span class="review-tariff">ТАРИФ: АЛЬФА // 5 TEL</span>
-              </article>
-
-              <article class="review-card terminal-status-card">
-                <div class="review-meta">
-                  <span>ТЕХНИЧЕСКАЯ СВОДКА</span>
-                  <span class="status-red">● УЗЕЛ АКТИВЕН</span>
-                </div>
-                <div class="specs-list">
-                  <div class="spec-row">
-                    <span class="spec-label">Частота лазера:</span>
-                    <span class="spec-val">840.00 ТГц</span>
-                  </div>
-                  <div class="spec-row">
-                    <span class="spec-label">Кодировка:</span>
-                    <span class="spec-val">BINARY-MMC v4.2</span>
-                  </div>
-                  <div class="spec-row">
-                    <span class="spec-label">Активных будок:</span>
-                    <span class="spec-val">14 820 ед.</span>
-                  </div>
-                  <div class="spec-row">
-                    <span class="spec-label">Дежурный инженер:</span>
-                    <span class="spec-val">@tkad1</span>
-                  </div>
-                </div>
+                <span class="review-author">— Дипломатический корпус ММС</span>
               </article>
             </div>
           </div>
 
-          <!-- Нижняя панель контактов и подвал -->
-          <div class="footer-bottom-area">
-            <div class="contacts-bar">
-              <div class="contact-box">
-                <span class="contact-heading">Контакты</span>
-                <span class="contact-sub">Прямая линия связи с оператором проекта (Telegram):</span>
-                <a href="https://t.me/tkad1" target="_blank" rel="noopener noreferrer" class="tg-button">
-                  <img src="assets/icons/icon-telegram.svg" alt="Telegram" class="tg-icon">
-                  <span>@tkad1 — telegram</span>
-                </a>
+          <div class="contact-col-wrapper">
+            <aside class="terminal-contact-box" aria-label="Связаться с автором проекта">
+              <div class="terminal-status">
+                <span class="system-dot"></span>
+                <span>КАНАЛ ОТКРЫТ // ТЕРМИНАЛ ММС</span>
               </div>
-
-              <div class="lang-box">
-                <span class="lang-title">Выберите язык</span>
-                <div class="lang-badge">Русский</div>
-              </div>
-            </div>
-
-            <footer class="bottom-legal-bar">
-              <div class="footer-brand">
-                <img src="assets/icons/logo.svg" alt="TELEPHONE" class="footer-logo-img">
-                <span class="footer-brand-name">TELEPHONE</span>
-              </div>
-
-              <div class="footer-copy">
-                МИНИСТЕРСТВО МЕЖЗВЕЗДНОЙ СВЯЗИ © 3026–3124 // СТУДЕНТ ТКАЧЕВ М.Д. (БРИЦП261)
-              </div>
-            </footer>
+              <h3 class="terminal-title">Прямая связь с оператором</h3>
+              <p class="terminal-sub">
+                По вопросам подключения звездных систем, верстки и дизайна проекта свяжитесь напрямую через защищенный канал Telegram:
+              </p>
+              <a href="https://t.me/tkad1" target="_blank" rel="noopener noreferrer" class="tg-contact-btn">
+                <span>Связаться: @tkad1 (Telegram)</span>
+                <span>→</span>
+              </a>
+            </aside>
           </div>
-
         </div>
 
+        <footer class="footer-wrapper">
+          <div class="footer-upper">
+            <div class="footer-contacts-col">
+              <h4>Контакты</h4>
+              <ul class="footer-contacts-list">
+                <li>Telegram: <a href="https://t.me/tkad1" target="_blank" rel="noopener noreferrer">@tkad1</a></li>
+                <li>Автор: Ткачев М. Д. (группа РИЦП261)</li>
+                <li>Частота ММС: 223.23 ТГц</li>
+              </ul>
+            </div>
+
+            <div class="lang-selector">
+              <label for="lang-select" class="lang-label">Выберите язык</label>
+              <select id="lang-select" class="lang-select" name="language">
+                <option value="ru" selected>Русский</option>
+                <option value="bin">010101 (Бинарный)</option>
+                <option value="en">Galactic Standard</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <a href="#top" class="footer-logo">
+              <svg width="18" height="28" viewBox="0 0 28 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="14,2 25,8.5 25,21.5 14,28 3,21.5 3,8.5" stroke="#6d28d9" stroke-width="2" fill="none"/>
+                <polygon points="14,14 25,20.5 25,33.5 14,40 3,33.5 3,20.5" stroke="#6d28d9" stroke-width="2" fill="none"/>
+              </svg>
+              <span class="brand-wordmark">TELEPHONE</span>
+            </a>
+
+            <p class="footer-copy">МИНИСТЕРСТВО МЕЖЗВЕЗДНОЙ СВЯЗИ © 3026–3124 // TELEGRAM: @TKAD1</p>
+          </div>
+        </footer>
       </div>
     </section>
 
+  </main>
+
+  <!-- Чистое CSS-модальное окно (работает через :target без JS) -->
+  <div id="auth-modal" class="css-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="css-modal-card">
+      <a href="#top" class="css-modal-close" aria-label="Закрыть окно">×</a>
+      <p class="terminal-status"><span class="system-dot"></span> АВТОРИЗАЦИЯ В СЕТИ ММС</p>
+      <h3 id="modal-title" class="terminal-title">Доступ к терминалу TELEPHONE</h3>
+      <p class="terminal-sub">
+        Для получения персонального ключа межзвездной связи напишите оператору станции в Telegram:
+      </p>
+      <a href="https://t.me/tkad1" target="_blank" rel="noopener noreferrer" class="tg-contact-btn">
+        Написать @tkad1 в Telegram
+      </a>
+    </div>
   </div>
 
 </body>
