@@ -1,47 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Oswald:wght@500;600;700&display=swap');
+ :root {
+      --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-display: 'Oswald', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
 
-@font-face {
-  font-family: 'Inter';
-  src: url('../assets/fonts/Inter-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
+      --color-red-node: #a32b18;
+      --color-red-stroke: #d63a24;
+      --color-teal: #00c48c;
+      --color-cyan-dot: #00e5b0;
+      --color-purple-deep: #12061c;
+      --color-charcoal: #2c2c2c;
+    }
 
-@font-face {
-  font-family: 'Inter';
-  src: url('../assets/fonts/Inter-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
+    body {
+      font-family: var(--font-main);
+    }
 
-@font-face {
-  font-family: 'Oswald';
-  src: url('../assets/fonts/Oswald-SemiBold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
+    .brand-wordmark {
+      font-family: var(--font-display);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
 
-@font-face {
-  font-family: 'JetBrains Mono';
-  src: url('../assets/fonts/JetBrainsMono-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
+    main {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
 
-:root {
-  --font-main: 'Inter', sans-serif;
-  --font-display: 'Oswald', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
-
-  --color-red: #9E2A1C;
-  --color-red-line: #B82918;
-  --color-cyan: #00C49A;
-  --color-purple-dark: #14052B;
-  --color-purple-mid: #3C0982;
-  --color-purple-glow: #6914D6;
-  --color-graphite: #323232;
-}
