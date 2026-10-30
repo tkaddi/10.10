@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 500" fill="none">
+  <defs>
+    <path id="binaryTrackPath" d="M 262, 268 m -182, 0 a 182,166 0 1,1 364,0 a 182,166 0 1,1 -364,0" />
+  </defs>
+  <g transform="rotate(-16 270 265)">
+    <ellipse cx="276" cy="256" rx="224" ry="204" fill="#FFFFFF" stroke="#1E1E1E" stroke-width="1.5" />
+    <ellipse cx="262" cy="268" rx="216" ry="196" fill="#FFFFFF" stroke="#222222" stroke-width="1.5" />
+    <text fill="#111111" font-family="Oswald, sans-serif" font-size="22" font-weight="700" letter-spacing="10.5">
+      <textPath href="#binaryTrackPath" startOffset="2%">
+        101010101010101010101010101010101010
+      </textPath>
+    </text>
+    <ellipse cx="262" cy="268" rx="156" ry="142" fill="#9E2A1C" stroke="#222222" stroke-width="1.5" />
+    <ellipse cx="262" cy="268" rx="54" ry="50" fill="#9E2A1C" stroke="#1B1B1B" stroke-width="1.5" />
+  </g>
+  <text x="263" y="282" text-anchor="middle" fill="#FFFFFF" font-family="Oswald, sans-serif" font-size="42" font-weight="600" letter-spacing="6">20</text>
+</svg>

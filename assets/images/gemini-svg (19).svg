@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 780" fill="none">
+  <defs>
+    <filter id="glowCyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+    <filter id="glowWhite" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <!-- Орбитальная система справа -->
+  <g opacity="0.45">
+    <circle cx="1220" cy="490" r="145" stroke="rgba(255,255,255,0.22)" stroke-width="1" stroke-dasharray="6 6" />
+    <circle cx="1220" cy="490" r="95" stroke="#00C49A" stroke-width="1.5" stroke-opacity="0.5" />
+    <circle cx="1220" cy="490" r="48" stroke="rgba(255,255,255,0.35)" stroke-width="1" />
+    <circle cx="1220" cy="490" r="14" fill="#9E2A1C" />
+    <circle cx="1125" cy="490" r="6" fill="#00C49A" filter="url(#glowCyan)" />
+    <circle cx="1322" cy="388" r="5" fill="#ffffff" filter="url(#glowWhite)" />
+  </g>
+  <!-- Созвездие сверху справа -->
+  <g opacity="0.4">
+    <polyline points="1080,95 1165,135 1255,88 1330,155" stroke="rgba(255,255,255,0.35)" stroke-width="1" stroke-dasharray="3 3" />
+    <circle cx="1080" cy="95" r="3.5" fill="#ffffff" filter="url(#glowWhite)" />
+    <circle cx="1165" cy="135" r="4" fill="#00C49A" filter="url(#glowCyan)" />
+    <circle cx="1255" cy="88" r="3.5" fill="#ffffff" />
+    <circle cx="1330" cy="155" r="4.5" fill="#ffffff" filter="url(#glowWhite)" />
+  </g>
+  <!-- Четырехконечные светила со свечением -->
+  <path d="M640 70 L644 82 L656 86 L644 90 L640 102 L636 90 L624 86 L636 82 Z" fill="#ffffff" opacity="0.75" filter="url(#glowWhite)" />
+  <path d="M1355 650 L1358 659 L1367 662 L1358 665 L1355 674 L1352 665 L1343 662 L1352 659 Z" fill="#00C49A" opacity="0.8" filter="url(#glowCyan)" />
+  <path d="M920 675 L923 683 L931 686 L923 689 L920 697 L917 689 L909 686 L917 683 Z" fill="#ffffff" opacity="0.6" filter="url(#glowWhite)" />
+</svg>

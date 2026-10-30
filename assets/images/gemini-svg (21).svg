@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 780" fill="none">
+  <defs>
+    <filter id="glowCyan4" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+    <filter id="glowWhite4" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <!-- Эллиптические рукава галактики -->
+  <g opacity="0.26">
+    <ellipse cx="720" cy="410" rx="620" ry="210" stroke="rgba(255,255,255,0.3)" stroke-width="1" stroke-dasharray="8 8" transform="rotate(-8 720 410)" />
+    <ellipse cx="720" cy="410" rx="460" ry="145" stroke="#00C49A" stroke-width="1" stroke-dasharray="4 6" transform="rotate(-8 720 410)" />
+  </g>
+  <!-- Звездная система сверху справа -->
+  <g opacity="0.45">
+    <circle cx="1190" cy="145" r="58" stroke="rgba(255,255,255,0.4)" stroke-width="1.2" />
+    <circle cx="1190" cy="145" r="32" stroke="#00C49A" stroke-width="1" stroke-dasharray="3 3" />
+    <circle cx="1190" cy="145" r="8" fill="#00C49A" filter="url(#glowCyan4)" />
+    <circle cx="1248" cy="145" r="4" fill="#ffffff" filter="url(#glowWhite4)" />
+  </g>
+  <!-- Четырехконечные светила -->
+  <path d="M585 115 L589 127 L601 131 L589 135 L585 147 L581 135 L569 131 L581 127 Z" fill="#ffffff" opacity="0.8" filter="url(#glowWhite4)" />
+  <path d="M960 620 L963 630 L973 633 L963 636 L960 646 L957 636 L947 633 L957 630 Z" fill="#00C49A" opacity="0.8" filter="url(#glowCyan4)" />
+  <path d="M160 560 L163 569 L172 572 L163 575 L160 584 L157 575 L148 572 L157 569 Z" fill="#ffffff" opacity="0.7" filter="url(#glowWhite4)" />
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 390" fill="none">
+  <circle cx="195" cy="195" r="192" fill="#030206" stroke="#9D5CE6" stroke-width="2" />
+  <circle cx="195" cy="195" r="184" stroke="rgba(255,255,255,0.65)" stroke-width="1" />
+  <ellipse cx="195" cy="195" rx="55" ry="181" stroke="#00C49A" stroke-width="1" />
+  <ellipse cx="195" cy="195" rx="181" ry="44" stroke="#7E22CE" stroke-width="1" />
+</svg>
